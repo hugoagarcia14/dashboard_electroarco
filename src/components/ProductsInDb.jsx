@@ -2,15 +2,15 @@ import React from 'react'
 
 class ProductsInDb extends React.Component {
     state = {
-        genres: [],
+        products: [],
         overTitle: false
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/api/genres')
+        fetch('http://localhost:3001/api/products')
             .then(res => res.json())
             .then(data => {
-                this.setState({ genres: data.data })
+                this.setState({ products: data.data })
             })
             .catch(err => {
                 console.log(err)
@@ -30,11 +30,11 @@ class ProductsInDb extends React.Component {
                     </div>
                     <div className={`card-body ${this.state.overTitle ? 'bg-secondary' : ''}`}>
                         <div className="row">
-                            {this.state.genres.map((genre, index) =>
+                            {this.state.products.map((product, index) =>
                                 <div className="col-lg-6 mb-4" key={index}>
                                     <div className="card bg-dark text-white shadow">
                                         <div className="card-body">
-                                            {genre.name}
+                                            {product.name}
                                         </div>
                                     </div>
                                 </div>
