@@ -7,14 +7,14 @@ import UserList from './UserList'
 
 class User extends React.Component {
     state = {
-        movies: []
+        users: []
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/api/movies')
+        fetch('http://localhost:3001/api/users')
         .then(res => res.json())
         .then(data => {
-            this.setState({ movies: data.data })
+            this.setState({ users: data.data })
         })
         .catch(err => {
             console.log(err)
@@ -24,27 +24,27 @@ class User extends React.Component {
     render() {
         return (
             <>
-                {/*<!-- MOVIES LIST -->*/}
+                {/*<!-- USUARIO LIST -->*/}
                 <h1 className="h3 mb-2 text-gray-800 ">Usuarios en base de datos</h1>
 
-                {/*<!-- DataTales Example -->*/}
+                {/*<!-- DataTales -->*/}
                 <div className="card shadow mb-4">
                     <div className="card-body">
                         <div className="table-responsive">
                             <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                                 <thead>
                                     <tr>
-                                        <th>Id</th>
-                                        <th>Titulo</th>
-                                        <th>Calificación</th>
-                                        <th>Premios</th>
-                                        <th>Duración</th>
+                                        <th>Nombres</th>
+                                        <th>Apellidos</th>
+                                        <th>Email</th>
+                                        <th>Telefono</th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {
-                                        this.state.movies.map((movie, index) => {
-                                            return <UserList  {...movie} key={index} />
+                                        this.state.users.map((user, index) => {
+                                            return <UserList  {...user} key={index} />
                                         })
                                     }
                                 </tbody>

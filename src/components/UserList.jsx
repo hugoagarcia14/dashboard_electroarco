@@ -5,11 +5,11 @@ function UserList(props){
     return (
         <React.Fragment>
             <tr>
-                <td>{props.id}</td>
-                <td>{props.title}</td>
-                <td>{props.rating}</td>
-                <td>{props.awards}</td>
-                <td>{props.length}</td>
+                <td>{props.first_name}</td>
+                <td>{props.last_name}</td>
+                <td>{props.email}</td>
+                <td>{props.phone}</td>
+                
             </tr>
         </React.Fragment>
     )
@@ -17,13 +17,10 @@ function UserList(props){
 
 UserList.propTypes = {
     id: PropTypes.number,
-    title: PropTypes.string,
-    rating: PropTypes.oneOfType([
-        PropTypes.number,
-        PropTypes.string
-    ]),
-    awards: PropTypes.number,
-    length: PropTypes.number
+    first_name: PropTypes.string,
+    last_name: PropTypes.string,
+    email: PropTypes.string,
+    phone: PropTypes.number
 }
 
 export default UserList

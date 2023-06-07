@@ -9,6 +9,7 @@ import LastProductInDb from './components/LastProductInDb'
 import SearchProducts from './components/SearchProducts'
 
 import './App.css'
+import User from './components/User'
 
 function App() {
 	return (
@@ -22,7 +23,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<ContentWrapper />} />
 				<Route path="/products" element={<ProductsInDb />} />
-				<Route path="/product" element={<ContentRowUserProducts />} />
+				<Route path="/users" element={<User/>} />
 				<Route path="/last-product" element={<LastProductInDb />} />
 				<Route path="/last-user" element={<LastUserInDb />} />
 				<Route path="/search" element={<SearchProducts prueba="esta es una propiedad de prueba" />} />
