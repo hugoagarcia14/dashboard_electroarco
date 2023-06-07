@@ -20,7 +20,7 @@ UserList.propTypes = {
     first_name: PropTypes.string,
     last_name: PropTypes.string,
     email: PropTypes.string,
-    phone: PropTypes.number
+    phone: PropTypes.string,
 }
 
 export default UserList

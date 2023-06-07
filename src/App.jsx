@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/SideBar'
 import ContentWrapper from './components/ContentWrapper'
 import ProductsInDb from './components/ProductsInDb'
 import LastUserInDb from './components/LastUserInDb'
