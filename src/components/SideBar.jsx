@@ -41,7 +41,7 @@ function SideBar() {
 			{/* <!-- Nav Item - Charts --> */}
 			<li className="nav-item">
 				<Link className="nav-link" to="/users">
-					<i className="fas fa-fw fa-chart-area"></i>
+				<i className="fas fa-users"></i>
 					<span>Usuarios</span>
 				</Link>
 			</li>
@@ -55,7 +55,7 @@ function SideBar() {
 			</li>
 			<li className="nav-item">
 				<Link className="nav-link" to="/last-user">
-					<i className="fas fa-fw fa-table"></i>
+				<i className="fas fa-user"></i>
 					<span>Ultimo Usuario</span>
 				</Link>
 			</li>

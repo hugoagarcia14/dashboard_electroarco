@@ -1,4 +1,8 @@
 .backgroundSideBar{
     background-color: black;
 }
+.card-header, .card-body{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
 

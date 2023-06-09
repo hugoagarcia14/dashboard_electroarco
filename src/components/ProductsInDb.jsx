@@ -32,11 +32,21 @@ class ProductsInDb extends React.Component {
                         <div className="row">
                             {this.state.products.map((product, index) =>
                                 <div className="col-lg-6 mb-4" key={index}>
-                                    <div className="card bg-dark text-white shadow">
-                                        <div className="card-body">
-                                            {product.name}
+
+                                    <div className="card-header py-3">
+                                        <h5 className="m-0 font-weight-bold text-gray-800">{product.name}</h5>
+                                    </div>
+                                    <div className="card-body">
+                                        <div className="text-center">
+                                            <img
+                                                className="img-fluid px-3 px-sm-4 mt-3 mb-4"
+                                                src={`http://localhost:3001/images/products/${product.image}`}
+                                                style={{ width: '100%', objectFit: 'cover' }}
+                                            />
+                                            {product.description}
                                         </div>
                                     </div>
+
                                 </div>
                             )}
                         </div>
