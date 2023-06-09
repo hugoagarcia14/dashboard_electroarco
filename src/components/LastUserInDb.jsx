@@ -1,18 +1,60 @@
 import React from 'react'
+import UserList from './UserList'
 
+class User extends React.Component {
+    state = {
+        users: []
+    }
+
+}
 function LastUserInDb() {
+    const [user, setUser] = React.useState()
+    React.useEffect(() => {
+        fetch('http://localhost:3001/api/users')
+            .then(res => res.json())
+            .then(data => {
+                const last = data.data[data.data.length - 1]
+                setUser(last)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, [])
     return (
-        <div className="col-lg-6 mb-4">
-            <div className="card shadow mb-4">
+        user &&
+        <div className="lastUser">
+            <div className="tableUser">
                 <div className="card-header py-3">
-                    <h5 className="m-0 font-weight-bold text-gray-800">Ultimo Usuario Agregado</h5>
+                    <h5 className="title-last">Ultimo Usuario Agregado</h5>
                 </div>
-                <div className="card-body">
-                    <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ "width": "40rem" }} src="assets/images/mandalorian.jpg" alt=" Star Wars - Mandalorian " />
+                <div className="card-margin-last-user">
+                    <div className="card-body-last-user">
+                        <div className="table-responsive">
+                            <table className="table table1 table-bordered" id="dataTable" width="100%" cellSpacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Nombres</th>
+                                        <th>Apellidos</th>
+                                        <th>Email</th>
+                                        <th>Teléfono</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody className='effec'>
+                                    {
+                                        <>
+                                            <td>{user.first_name}</td>
+                                            <td>{user.last_name}</td>
+                                            <td>{user.email}</td>
+                                            <td>{user.phone}</td>
+                                        </>
+                                       
+                                        
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/last-user">View movie detail</a>
                 </div>
             </div>
         </div>

@@ -26,7 +26,7 @@ function LastProductInDb() {
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ "width": "40rem" }} src={`http://localhost:3001/images/products/${product.image}`} alt=" Star Wars - Mandalorian " />
                     </div>
                     <p>{product.description}</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View product detail</a>
+                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/productDetail">View product detail</a>
                 </div>
             </div>
         </div>

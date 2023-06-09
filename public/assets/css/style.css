@@ -2,9 +2,21 @@
     background-color: black;
 
 }
-.card-header, .card-body{
-    border: 1px solid gray;
-    border-radius: 5px;
+
+.lastUser{
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.title-last{
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+}
+.tableUser{
+    width: 100%;
+    margin-left: 5px;
 }
 
 .title{
