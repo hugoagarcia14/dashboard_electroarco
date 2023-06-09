@@ -25,13 +25,13 @@ class User extends React.Component {
         return (
             <>
                 {/*<!-- USUARIO LIST -->*/}
-                <h1 className="h3 mb-2 text-gray-800 ">Usuarios en base de datos</h1>
+                <h1 className="title">Usuarios en base de datos</h1>
 
                 {/*<!-- DataTales -->*/}
-                <div className="card shadow mb-4">
+                <div className="card margin shadow mb-4">
                     <div className="card-body">
                         <div className="table-responsive">
-                            <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
+                            <table className="table table1 table-bordered" id="dataTable" width="100%" cellSpacing="0">
                                 <thead>
                                     <tr>
                                         <th>Nombres</th>
@@ -41,7 +41,7 @@ class User extends React.Component {
                                         
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody className='effec'>
                                     {
                                         this.state.users.map((user, index) => {
                                             return <UserList  {...user} key={index} />

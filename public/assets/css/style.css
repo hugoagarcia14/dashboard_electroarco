@@ -1,4 +1,35 @@
 .backgroundSideBar{
     background-color: black;
+
 }
 
+.title{
+    font-size: 30px;
+    position: absolute;
+    right: 500px;
+    top: 30px;
+    z-index: 10;
+
+}
+
+.effec{
+    color: black;
+    font-size: 12px;
+   text-align: justify;
+   background-color: cornsilk;
+   text-transform: uppercase;
+
+}
+
+.table1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+   
+}
+
+.margin{
+    margin-top: 5%;
+    margin-left: 22%;
+}
