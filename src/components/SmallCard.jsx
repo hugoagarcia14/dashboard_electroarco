@@ -33,7 +33,7 @@ SmallCard.propTypes = {
         PropTypes.number
     ]).isRequired,
     icon: PropTypes.oneOf([
-        'fa-film',
+        'fa-regular fa-box-open',
         'fa-award',
         'fa-users'
     ]).isRequired

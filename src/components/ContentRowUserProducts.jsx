@@ -8,7 +8,7 @@ const [cards, setCard]=useState([ {
     title: 'Total de Productos',
     color: 'primary',
     quantity: 0,
-    icon: 'fa-film'
+    icon: 'fa-regular fa-box-open'
 },
 {
     title: 'Total Usuarios',
