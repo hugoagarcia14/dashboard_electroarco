@@ -21,11 +21,12 @@ function ContentRowTop() {
             {/* <!-- Content Row Last Products, user in Data Base --> */}
             <div className="row">
                 {/* <!-- Last product, user in DB --> */}
+                <ProductsInDb />
                 <LastProductInDb />
-                <LastUserInDb />
+               
 
                 {/* <!-- Products in DB --> */}
-                <ProductsInDb />
+                
             </div>
         </div>
     )

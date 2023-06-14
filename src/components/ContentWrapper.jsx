@@ -19,7 +19,7 @@ function ContentWrapper() {
 				{/* <!-- Content Row Top --> */}
 				<ContentRowTop />
 				{/* <!--End Content Row Top--> */}
-				<User />
+				
 			</div>
 			{/* <!-- End of MainContent --> */}
 

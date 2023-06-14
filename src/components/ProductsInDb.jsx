@@ -26,7 +26,7 @@ class ProductsInDb extends React.Component {
             <div className="col-lg-6 mb-4">
                 <div className="card shadow mb-4">
                     <div className="card-header py-3">
-                        <h5 className="m-0 font-weight-bold text-gray-800" onMouseOver={this.onTitleOver}>Productos Agregados</h5>
+                        <h5 className="m-0 font-weight-bold text-gray-800">Productos Agregados</h5>
                     </div>
                     <div className={`card-body ${this.state.overTitle ? 'bg-secondary' : ''}`}>
                         <div className="row">

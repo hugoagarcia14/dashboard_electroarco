@@ -25,7 +25,7 @@ function LastUserInDb() {
         <div className="lastUser">
             <div className="tableUser">
                 <div className="card-header py-3">
-                    <h5 className="title-last">Ultimo Usuario Agregado</h5>
+                    <h5 className="title-last">Último Usuario Agregado</h5>
                 </div>
                 <div className="card-margin-last-user">
                     <div className="card-body-last-user">
